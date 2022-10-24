@@ -4,30 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ORDER</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <div class="main">
-
-        <div class="category">
-            <h2>ORDER TRACKER</h2>
-            <h2> Select:</h2>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header */
+        header {
+          background-color: #666;
+          padding: 30px;
+          text-align: center;
+          font-size: 35px;
+          color: white;
+        }
+        
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+          float: left;
+          width: 30%;
+          height: 300px; /* only for demonstration, should be removed */
+          background: #ccc;
+          padding: 20px;
+        }
+        
+        /* Style the list inside the menu */
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        article {
+          float: left;
+          padding: 20px;
+          width: 70%;
+          background-color: #f1f1f1;
+          height: 300px; /* only for demonstration, should be removed */
+        }
+        
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+          nav, article {
+            width: 100%;
+            height: auto;
+          }
+        }
+        </style>
+        </head>
+        <body>
+        
+        
+        <header>
+          <h2>ORDER TRACKER</h2>
+        </header>
+          
+          <article>
+            <h1>Select</h1>
             Enter Order Number:
-            <input type="text" required><br>
+            <input style="background-color:rgba(36, 33, 30, 0.664);" type="text" required><br>
             RECEIVED: <input type="checkbox"><br>
             PROCESSING: <input type="checkbox"> <br>
             DISPATCHED: <input type="checkbox"> <br>
             ON THE WAY: <input type="checkbox"> <br>
             DELIVERED: <input type="checkbox"> <br>
 
-
-        </div>
-        <div class="progress">
-            <h2>Progress</h2>
-        </div>
-    </div>
-    <script src="main.js"></script>
-</body>
+          </article>
+        </section>
+        
+        
+    <title>ORDER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 </html>
