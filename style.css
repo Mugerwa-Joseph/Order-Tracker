@@ -6,10 +6,11 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
+/* Style tthe form  */
   section{
     height: 100;
     width: 100;
-    background-color: rgb(240, 227, 227);
+    background-color: rgb(171, 240, 131);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +23,7 @@
     margin: 0 auto;
     padding: 20px;
     box-shadow: 0px 0px 20px #00000010;
-    background-color: white;
+    background-color: rgb(228, 238, 227);
     border-radius: 8px;
     margin-bottom: 20px;
   }
@@ -79,19 +80,7 @@
     color: white;
     animation: status 4s ease forwards;
   }
-  @keyframes status{
-    0%{
-      opacity: 1;
-      pointer-events: all;
-    }
-    90%{
-      opacity: 1;
-      pointer-events: all;
-    }100%{
-      opacity: 0;
-      pointer-events: none;
-    }
-  }
+   
   
   /* Style the header */
   header {
