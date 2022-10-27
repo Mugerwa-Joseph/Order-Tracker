@@ -6,7 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
-/* Style tthe form  */
+/* Style the form  */
   section{
     height: 100;
     width: 100;
@@ -18,12 +18,12 @@
   }
 
   div.container{
-    width: 90%;
+    width: 50%;
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    box-shadow: 0px 0px 20px #00000010;
-    background-color: rgb(228, 238, 227);
+    box-shadow: 0px 0px 20px #bd1a1a10;
+    background-color: rgba(153, 245, 168, 0.623);
     border-radius: 8px;
     margin-bottom: 20px;
   }
@@ -36,9 +36,9 @@
   .form-group input,
   .form-group textarea{
     width: 100%;
-    padding: 5px;
+    padding: 2px;
     font-size: 18px;
-    border: 1px solid rgba(128,128,128,0.199);
+    border: 1px solid rgba(63, 61, 61, 0.521);
     margin: 5px;
   }
 
@@ -72,7 +72,7 @@
     border-radius: 8px;
   }
   #status.success{
-    background-color: rgb(211, 250, 153);
+    background-color: rgb(182, 245, 219);
     animation: status 4s ease forwards;
   }
   #status.error{
@@ -96,7 +96,7 @@
     float: left;
     width: 50%;
     height: 300px; /* only for demonstration, should be removed */
-    background: rgb(247, 244, 244);
+    background: rgb(240, 217, 10);
     padding: 20px;
   }
   
@@ -110,28 +110,38 @@
     float: left;
     padding: 20px;
     width: 100%;
-    background-color: #6464570c;
+    background-color: #13e4d20c;
     height: 500px; /* only for demonstration, should be removed */
   }
 
   /*aglin the text in the center*/
   div.a {
    text-align: center;
+   width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
   }
 
   /*aglin the text in the left*/
   div.b {
    text-align: left;
-   text-align: center
-  
+   text-align: center;
+   width: 100%;
+   margin-top: 20px;
+   font-size: 20px;
   }
 
 
   /*aglin the text in the center*/
   div.c{
    text-align: center;
-   line-height: 80px;
+   line-height: 150px;
+   margin-top: 50px;
+   font-size: 20px;
+   max-width: 500px;
+   
   }
+  
 
 
   
@@ -193,30 +203,6 @@
   margin-left: -5px;
 }
 
-/* Done / Active */
-.progress .bar.done,
-.progress .circle.done {
-  background: #eee;
-}
-.progress .bar.active {
-  background: linear-gradient(to right, #EEE 40%, #FFF 60%);
-}
-.progress .circle.done .label {
-  color: #FFF;
-  background: #8bc435;
-  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
-}
-.progress .circle.done .title {
-  color: #444;
-}
-.progress .circle.active .label {
-  color: #FFF;
-  background: #0c95be;
-  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
-}
-.progress .circle.active .title {
-  color: #0c95be;
-}
-    
+
 
 
