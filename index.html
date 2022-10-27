@@ -21,48 +21,21 @@
       <h2>Enter Order Number:</h2>
       <input style="background-color:rgba(168, 146, 124, 0.664);" type="text" required>
       </div>
+      <div class="progress">
+      <form id="progress">
+        <label for="chkReceived" >RECEIVED</label><input id="chkReceived" type="checkbox" value="1" /><br>
+        <label for="chkProcessing">PROCESSING</label><input id="chkProcessing" type="checkbox" value="2" /><br>
+        <label for="chkDispated">DISPATCHED</label><input id="chkDispated" type="checkbox" value="3" /><br>
+        <label for="chkOntheway">ON THE WAY</label><input id="chkOntheway" type="checkbox" value="4" /><br>
+        <label for="chkDelivered">DELIVERED</label><input id="chkDelivered" type="checkbox" value="5" /><br>
+      </form>
+    </div>
 
-        <div class="c">
-            <article>
-
-                RECEIVED:      <input type="checkbox" id="rvd"><br>
-                PROCESSING:    <input type="checkbox" id="prc"> <br>
-                DISPATCHED:    <input type="checkbox" id="dsp"> <br>
-                ON THE WAY:    <input type="checkbox" id="otw"> <br>
-                DELIVERED:     <input type="checkbox" id="dld"> <br>
-
-              </article>
-
-        </div>
-
-        <div class="progress">
-            <h2>Progress</h2>
-            <div class="progress">
-                <div class="circle done">
-                  <span class="label">1</span>
-                  <span class="title">RECEIVED</span>
-                </div>
-                <span class="bar done"></span>
-                <div class="circle done">
-                  <span class="label">2</span>
-                  <span class="title">PROCESSING</span>
-                </div>
-                <span class="bar half"></span>
-                <div class="circle active">
-                  <span class="label">3</span>
-                  <span class="title">DISPATCHED</span>
-                </div>
-                <span class="bar"></span>
-                <div class="circle">
-                  <span class="label">4</span>
-                  <span class="title">WAY</span>
-                </div>
-                <span class="bar"></span>
-                <div class="circle">
-                  <span class="label">5</span>
-                  <span class="title">DELIVERED</span>
-                </div>
-              </div>
+        
+       <div class="progress bar">
+        <h2> progress bar</h2>
+        <div id="myProgress">
+          <div id="myBar"></div>
         </div>
 
     <script src="main.js"></script>
