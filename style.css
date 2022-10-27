@@ -5,6 +5,82 @@
   body {
     font-family: Arial, Helvetica, sans-serif;
   }
+
+/* Style the form  */
+  section{
+    height: 100;
+    width: 100;
+    background-color: rgb(171, 240, 131);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  div.container{
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #bd1a1a10;
+    background-color: rgba(153, 245, 168, 0.623);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  div.form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .form-group input,
+  .form-group textarea{
+    width: 100%;
+    padding: 2px;
+    font-size: 18px;
+    border: 1px solid rgba(63, 61, 61, 0.521);
+    margin: 5px;
+  }
+
+  textarea{
+    resize: vertical;
+  }
+  button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: 'Times New Roman';
+    color: rgb(27,166,247);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+  }
+  button[type="submit"]:hover{
+    background-color: rgb(214, 226, 236);
+  }
+
+  #status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  #status.success{
+    background-color: rgb(182, 245, 219);
+    animation: status 4s ease forwards;
+  }
+  #status.error{
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+  }
+   
   
   /* Style the header */
   header {
@@ -20,7 +96,7 @@
     float: left;
     width: 50%;
     height: 300px; /* only for demonstration, should be removed */
-    background: rgb(247, 244, 244);
+    background: rgb(240, 217, 10);
     padding: 20px;
   }
   
@@ -34,28 +110,38 @@
     float: left;
     padding: 20px;
     width: 100%;
-    background-color: #6464570c;
+    background-color: #13e4d20c;
     height: 500px; /* only for demonstration, should be removed */
   }
 
   /*aglin the text in the center*/
   div.a {
    text-align: center;
+   width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
   }
 
   /*aglin the text in the left*/
   div.b {
    text-align: left;
-   text-align: center
-  
+   text-align: center;
+   width: 100%;
+   margin-top: 20px;
+   font-size: 20px;
   }
 
 
   /*aglin the text in the center*/
   div.c{
    text-align: center;
-   line-height: 80px;
+   line-height: 150px;
+   margin-top: 50px;
+   font-size: 20px;
+   max-width: 500px;
+   
   }
+  
 
 
   
@@ -72,6 +158,7 @@
   box-sizing: border-box;
   font-family: "Open Sans";
 }
+
 
 
 /* Form Progress */
@@ -116,29 +203,6 @@
   margin-left: -5px;
 }
 
-/* Done / Active */
-.progress .bar.done,
-.progress .circle.done {
-  background: #eee;
-}
-.progress .bar.active {
-  background: linear-gradient(to right, #EEE 40%, #FFF 60%);
-}
-.progress .circle.done .label {
-  color: #FFF;
-  background: #8bc435;
-  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
-}
-.progress .circle.done .title {
-  color: #444;
-}
-.progress .circle.active .label {
-  color: #FFF;
-  background: #0c95be;
-  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
-}
-.progress .circle.active .title {
-  color: #0c95be;
-}
-    
+
+
 
