@@ -49,16 +49,12 @@
    text-align: center
   
   }
+  .progress {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
-
-  /*aglin the text in the center*/
-  div.c{
-   text-align: center;
-   line-height: 80px;
-  }
-
-
-  
   /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
   @media (max-width: 600px) {
     nav, article {
@@ -72,73 +68,22 @@
   box-sizing: border-box;
   font-family: "Open Sans";
 }
-
-
-/* Form Progress */
-.progress {
-  width: 1000px;
-  margin: 20px auto;
+.progress{
   text-align: center;
-}
-.progress .circle,
-.progress .bar {
-  display: inline-block;
-  background: #fff;
-  width: 40px; height: 40px;
-  border-radius: 40px;
-  border: 1px solid #d5d5da;
-}
-.progress .bar {
-  position: relative;
-  width: 80px;
-  height: 6px;
-  top: -33px;
-  margin-left: -5px;
-  margin-right: -5px;
-  border-left: none;
-  border-right: none;
-  border-radius: 0;
-}
-.progress .circle .label {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
-  border-radius: 32px;
-  margin-top: 3px;
-  color: #b5b5ba;
-  font-size: 17px;
-}
-.progress .circle .title {
-  color: #b5b5ba;
-  font-size: 13px;
-  line-height: 30px;
-  margin-left: -5px;
+  line-height: 70px;
 }
 
-/* Done / Active */
-.progress .bar.done,
-.progress .circle.done {
-  background: #eee;
+#myProgress {
+  margin: auto;
+  width: 50%;
+  background-color: black;
 }
-.progress .bar.active {
-  background: linear-gradient(to right, #EEE 40%, #FFF 60%);
+
+#myBar {
+  width: 0%;
+  height: 30px;
+  background-color: green;
 }
-.progress .circle.done .label {
-  color: #FFF;
-  background: #8bc435;
-  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
-}
-.progress .circle.done .title {
-  color: #444;
-}
-.progress .circle.active .label {
-  color: #FFF;
-  background: #0c95be;
-  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
-}
-.progress .circle.active .title {
-  color: #0c95be;
-}
+
     
 
