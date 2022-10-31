@@ -24,6 +24,7 @@ checks.forEach(function(box) {
 function myFunction() {
   var checkBox = document.getElementById("chkReceived");
   var text = document.getElementById("text");
+  
   if (checkBox.checked == true){
     text.style.display = "block";
   } else {
